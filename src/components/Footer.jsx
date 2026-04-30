@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo-new.png';
 
 const NAV_LINKS = [
   { label: 'Home',       href: '#home' },

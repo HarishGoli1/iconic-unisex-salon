@@ -165,8 +165,8 @@ const Hero = () => {
             style={{ aspectRatio: '3/4', maxWidth: 380, marginLeft: 'auto' }}
           >
             <img
-              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=85"
-              alt="Premium Hair Styling"
+              src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=600&q=90"
+              alt="Luxury Salon – Elegant Hair Styling"
               className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105"
               onError={(e) => {
                 e.target.src =
@@ -192,18 +192,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Floating mini badge */}
-          <div
-            className="absolute -left-8 top-12 glass-dark rounded-2xl px-5 py-4 shadow-float animate-float"
-            style={{ animationDelay: '1s' }}
-          >
-            <div className="text-gold text-xl font-bold" style={{ fontFamily: 'Playfair Display, serif', color: '#EDD9A3' }}>
-              ★ 4.9
-            </div>
-            <div className="text-white/60 text-[0.65rem] uppercase tracking-wider mt-0.5" style={{ fontFamily: 'Inter, sans-serif' }}>
-              Rated Premium
-            </div>
-          </div>
+
         </div>
       </div>
 
