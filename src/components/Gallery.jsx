@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 
+/* ── Local gallery images ── */
+import hairCuttingImg from '../assets/gallery/hair-cutting.jpg';
+import hairColoringImg from '../assets/gallery/hair-coloring.jpg';
+import bridalMakeupImg from '../assets/gallery/bridal-makeup.jpg';
+import beardGroomingImg from '../assets/gallery/beard-grooming.jpg';
+
 /* ─────────────────────────────────────────────
    Interactive Image Accordion — Gallery Section
    Replaces the old static grid with an immersive
@@ -11,46 +17,25 @@ const accordionItems = [
     id: 1,
     title: 'Precision Styling',
     sub: 'Hair Artistry',
-    imageUrl:
-      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85',
-    fallback:
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=85',
+    imageUrl: hairCuttingImg,
   },
   {
     id: 2,
     title: 'Colour Craft',
     sub: 'Balayage & Highlights',
-    imageUrl:
-      'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=85',
-    fallback:
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=85',
+    imageUrl: hairColoringImg,
   },
   {
     id: 3,
     title: 'Bridal Perfection',
     sub: 'Occasion Styling',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519828209008-c17eb434082f?auto=format&fit=crop&w=800&q=85',
-    fallback:
-      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85',
+    imageUrl: bridalMakeupImg,
   },
   {
     id: 4,
     title: 'The Gentleman',
     sub: 'Grooming & Beard',
-    imageUrl:
-      'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=85',
-    fallback:
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=85',
-  },
-  {
-    id: 5,
-    title: 'Salon Ambience',
-    sub: 'Premium Interior',
-    imageUrl:
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=85',
-    fallback:
-      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85',
+    imageUrl: beardGroomingImg,
   },
 ];
 
@@ -79,7 +64,7 @@ const AccordionPanel = ({ item, isActive, onMouseEnter }) => (
         transition: 'transform 0.7s cubic-bezier(0.22,1,0.36,1)',
       }}
       onError={(e) => {
-        e.target.src = item.fallback;
+        e.target.style.display = 'none';
       }}
     />
 
@@ -139,7 +124,7 @@ const AccordionPanel = ({ item, isActive, onMouseEnter }) => (
 
 /* ── Gallery Section ── */
 const Gallery = () => {
-  const [activeIndex, setActiveIndex] = useState(2);
+  const [activeIndex, setActiveIndex] = useState(1);
 
   return (
     <section
