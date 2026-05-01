@@ -11,8 +11,8 @@ const SERVICES_LIST = [
   'Other',
 ];
 
-const WA_NUMBER = '916302468858';
-const PHONE = '+91 6302468858';
+const WA_NUMBER = '919100040648';
+const PHONE = '+91 9100040648';
 const ADDRESS = 'Lila Nilayam 1079/5, 22nd Main Rd, A Block, Sahakar Nagar, Bengaluru, Karnataka 560092';
 
 const Contact = () => {
@@ -97,7 +97,7 @@ const Contact = () => {
                 <p className="text-smoke text-sm leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>{ADDRESS}</p>
               </div>
               {/* Phone */}
-              <a href={`tel:${PHONE}`} className="flex items-center gap-3 mb-4 group">
+              <a href="tel:9100040648" className="flex items-center gap-3 mb-4 group">
                 <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0" style={{ background: 'rgba(201,169,110,0.12)' }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A96E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 11.39a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
@@ -118,7 +118,7 @@ const Contact = () => {
 
             {/* WhatsApp CTA */}
             <a
-              href={`https://wa.me/${WA_NUMBER}`}
+              href={`https://wa.me/${}`}
               target="_blank"
               rel="noreferrer"
               className="flex items-center justify-center gap-3 py-4 rounded-2xl font-medium text-sm uppercase tracking-widest transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 reveal-left"

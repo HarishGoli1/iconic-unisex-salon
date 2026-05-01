@@ -54,7 +54,7 @@ const CTA = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center reveal" data-delay="300">
           <a href="#contact" className="btn-gold">Book Appointment</a>
           <a
-            href="https://wa.me/916302468858"
+            href="https://wa.me/919100040648"
             target="_blank"
             rel="noreferrer"
             className="btn-outline-gold flex items-center justify-center gap-2"
