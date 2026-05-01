@@ -11,9 +11,9 @@ const SERVICES_LIST = [
   'Other',
 ];
 
-const WA_NUMBER = '919876543210';
-const PHONE     = '+91 98765 43210';
-const ADDRESS   = 'Lila Nilayam 1079/5, 22nd Main Rd, A Block, Sahakar Nagar, Bengaluru, Karnataka 560092';
+const WA_NUMBER = '916302468858';
+const PHONE = '+91 6302468858';
+const ADDRESS = 'Lila Nilayam 1079/5, 22nd Main Rd, A Block, Sahakar Nagar, Bengaluru, Karnataka 560092';
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', phone: '', service: '', message: '' });
@@ -91,7 +91,7 @@ const Contact = () => {
               <div className="flex items-start gap-3 mb-5">
                 <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ background: 'rgba(201,169,110,0.12)' }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A96E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/>
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z" /><circle cx="12" cy="10" r="3" />
                   </svg>
                 </div>
                 <p className="text-smoke text-sm leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>{ADDRESS}</p>
@@ -100,7 +100,7 @@ const Contact = () => {
               <a href={`tel:${PHONE}`} className="flex items-center gap-3 mb-4 group">
                 <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0" style={{ background: 'rgba(201,169,110,0.12)' }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A96E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 11.39a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 11.39a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
                   </svg>
                 </div>
                 <span className="text-smoke text-sm group-hover:text-gold transition-colors" style={{ fontFamily: 'Inter, sans-serif' }}>{PHONE}</span>
@@ -109,7 +109,7 @@ const Contact = () => {
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0" style={{ background: 'rgba(201,169,110,0.12)' }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A96E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                    <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
                   </svg>
                 </div>
                 <span className="text-smoke text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>Mon – Sun, 10:00 AM – 8:00 PM</span>
@@ -129,7 +129,7 @@ const Contact = () => {
                 boxShadow: '0 4px 20px rgba(37,211,102,0.3)',
               }}
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.062.522 4.004 1.438 5.695L0 24l6.474-1.414A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.784 9.784 0 01-5.017-1.374l-.36-.214-3.732.815.843-3.636-.235-.374A9.783 9.783 0 012.18 12C2.18 6.56 6.56 2.18 12 2.18c5.44 0 9.82 4.38 9.82 9.82 0 5.44-4.38 9.818-9.82 9.818z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" /><path d="M12 0C5.373 0 0 5.373 0 12c0 2.062.522 4.004 1.438 5.695L0 24l6.474-1.414A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.784 9.784 0 01-5.017-1.374l-.36-.214-3.732.815.843-3.636-.235-.374A9.783 9.783 0 012.18 12C2.18 6.56 6.56 2.18 12 2.18c5.44 0 9.82 4.38 9.82 9.82 0 5.44-4.38 9.818-9.82 9.818z" /></svg>
               Chat on WhatsApp
             </a>
 
